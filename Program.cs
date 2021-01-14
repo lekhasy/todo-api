@@ -20,7 +20,7 @@ namespace todo_api
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>().UseUrls("http://localhost:5000", "https://localhost:5001", "http://192.168.1.32:5000");
+                    webBuilder.UseStartup<Startup>().UseUrls("http://0.0.0.0:5000");
                 });
     }
 }
