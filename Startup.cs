@@ -44,7 +44,9 @@ namespace todo_api
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "todo_api v1"));
             // }
 
-            app.UseCors();
+            app.UseCors(conf => {
+                conf.AllowAnyMethod();
+            });
 
             app.UseHttpsRedirection();
 
