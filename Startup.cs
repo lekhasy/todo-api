@@ -45,6 +45,7 @@ namespace todo_api
             // }
 
             app.UseCors(conf => {
+                conf.AllowAnyOrigin();
                 conf.AllowAnyMethod();
             });
 
